@@ -6,6 +6,13 @@
 using namespace std;
 #define int long long
 
+/*
+
+    CAN BE DONE USING MEMOIZATION BUT WILL WILL END UP USING HELL AMOUNT OF STACK SPACE
+    
+
+*/
+
 void Schrodinger(){
 
     string s,t;
@@ -25,7 +32,8 @@ void Schrodinger(){
     for(int i=1;i<n1;i++){
 
         dp[i][0]=max(dp[i-1][0],(s[i]==t[0])*1LL);
-    }.
+
+    }
 
     for(int i=1;i<n1;i++){
         for(int j=1;j<n2;j++){
